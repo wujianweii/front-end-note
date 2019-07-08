@@ -16,5 +16,8 @@ Git
 
 // 暂存区(git add - 增加到暂存区中) / 工作区(当前编辑) / 历史区(git hash)
 
-// git reflog
+// git reflog - 后悔药(恢复被删除的版本)
 // - https://blog.csdn.net/u013252047/article/details/80230781
+
+// git diff
+// 查看本地文件修改记录
