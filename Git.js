@@ -22,4 +22,11 @@ Git
 // git diff
 // 查看本地文件修改记录
 
-// git 
+
+// git stash - 暂存当前正在进行的工作
+// - https://blog.csdn.net/wh_19910525/article/details/7784901
+// git stash list - 查看stash列表
+// git stash drop - 丢掉保存的内容
+// git stash pop - 应用stash并丢掉
+// git stash apply stash@{1} - 应用指定版本号的stash
+// git stash clear - 清空stash
