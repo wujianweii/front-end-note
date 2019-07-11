@@ -4,6 +4,9 @@
 // 复杂数据类型 - object对象 — Function/Array/Date...
 // JS变量按照存储方式区分为 值类型 和 引用类型
 // - https://blog.csdn.net/linxiaoduo/article/details/80117628 (js值类型和引用类型的区别)
+// 1.存储位置 - 栈内存 / 堆内存
+// 2.复制方式 - 深复制 / 浅复制 （js实现数组浅拷贝和深拷贝 https://blog.csdn.net/qq_37268201/article/details/80448848 / https://blog.csdn.net/FungLeo/article/details/54931379）
+
 // - https://www.cnblogs.com/xuniannian/p/7452086.html (JS中的六大数据类型)
 
 
@@ -36,7 +39,7 @@ new Object() instanceof Array === false
 // 左侧为实例，右侧为原型对象
 
 
-Object.prototype.toString.call
+Object.prototype.toString.call.slice(8, -1)
 // JQ采用该方式
 
 //通过{}.toSring拿到, 适合内置对象和基元类型 < 注意：IE6/7/8会有兼容性问题 null和underfined返回 [object,object] >
