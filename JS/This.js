@@ -73,7 +73,18 @@ console.log(o.phase, o.modules); //logs -0.78 1.4142
 
 // 用 new 把它作为构造器去调用的话，那么这里面的this会指向一个空的对象，并且这个对象的原型会指向MyClass.prototype
 // this 会指向原型为 MyClass.prototype 属性这样一个空对象 因为没有return或者return的是基本类型的话,会将默认的this会作为返回值
-//但是return语句返回的是一个对象，会将return的这个对象作为返回值
+// 但是return语句返回的是一个对象，会将return的这个对象作为返回值
+
+// new一个对象的过程
+// 1. 创建空对象
+// 2. 设置新对象的constructor属性为构造函数的名称，设置新对象的__proto__属性指向构造函数的prototype对象；
+
+var a = new Array();
+a.constructor === Array;
+a.__proto__ === Array.prototype;
+
+// 3. 将步骤1新创建的对象作为this的上下文 / 函数中的this被指向新实例对象
+// 4. 如果该函数没有返回对象，则返回this
 
 function MyClass() {
 	this.a = 37;

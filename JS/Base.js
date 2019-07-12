@@ -53,7 +53,7 @@ constructor // 任何对象都有该属性, 继承自原型, 会指向构造这�
 // console.log((function() {}).constructor === Function); // true
 // constructor属性是可以被修改的，会导致检测出的结果不正确
 function Fn(){};
-Fn.prototype = new Array();
+Fn.prototype = new Array(); // 重写原型
 var f = new Fn();
 console.log(f.constructor === Fn); // false
 console.log(f.constructor === Array); // true
