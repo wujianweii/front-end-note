@@ -1,3 +1,9 @@
+// 数组方法 - 不会修改原数组 / 会修改原数组
+
+
+
+
+
 // * 数组去重 (先理思路·在码代码)
 // - https://juejin.im/post/5aed6110518825671b026bed
 
@@ -26,3 +32,20 @@ function dedupe(array) {
   return Array.from(new Set(array)) || [...new Set(array)];
 }
 console.log(dedupe(arr)); // [1, 2, 3, 4]
+
+
+
+
+
+
+
+
+
+
+
+
+// * 传递两个参数m，n，返回长度为m，所有元素都为n的数组，要求不能用循环 (利用函数的递归和 concat() 方法可以实现)
+function fn(m, n) {
+  return m ? fn(m - 1, n).concat(n) : [];
+}
+// fn(1, 1) - [].concat(1) - [1]

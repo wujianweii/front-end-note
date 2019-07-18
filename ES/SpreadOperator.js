@@ -34,3 +34,23 @@ let aClone = Object.assign({}, a);
 // 深拷贝：完全的拷贝一个对象，即使嵌套了对象，两者也相互分离，修改一个对象的属性，也不会影响另一个。
 
 // 浅拷贝 != 赋值
+
+
+// 浅拷贝的实现方法
+- Object.assign()
+
+// Array的slice和concat方法不修改原数组，只会返回一个浅复制了原数组中的元素的一个新数组。
+- Array.prototype.concat() // 修改新对象会改到原对象
+
+var a = [{a: 1}];
+var b = a.concat();
+b[0].a = 2;
+a - [{a: 1}]
+
+- Array.prototype.slice()
+
+
+// 深拷贝的实现方法
+- JSON.parse(JSON.stringify())
+- 手写递归方法
+- lodash.cloneDeep
