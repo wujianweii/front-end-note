@@ -101,17 +101,15 @@ Object.defineProperty(obj, prop, descriptor)
 // - https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
 
 Object.getOwnPropertyNames()
-
+// - 返回一个由指定对象的所有自身属性的属性名（包括不可枚举属性但不包括Symbol值作为名称的属性）组成的数组。
 
 
 // 特性
 // - https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
 
-configurable
-enumerable
-writable
-
-
+configurable // 是否可配置
+enumerable // 是否可枚举
+writable // 是否可写(重新分配)
 
 
 

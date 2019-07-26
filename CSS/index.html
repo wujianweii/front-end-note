@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BFC</title>
+  <style>
+    /* .blue,
+    .red-inner {
+      height: 50px;
+      margin: 10px 0;
+    }
+
+    .blue {
+      background: blue;
+    }
+
+    .red-outer {
+      margin-top: 10px;
+      overflow: auto;
+      background: red;
+    } */
+    /* .box {
+      background-color: rgb(224, 206, 247);
+      width: 100%;
+      border: 5px solid rebeccapurple;
+      display: flow-root;
+      overflow: hidden;
+      display: inline-block;
+      display: grid;
+      position: absolute;
+      position: fixed;
+    } */
+
+    /* .float {
+      float: left;
+      width: 200px;
+      height: 150px;
+      background-color: white;
+      border: 1px solid black;
+      padding: 10px;
+    } */
+    /* p {
+      color: #f55;
+      background: #fcc;
+      width: 200px;
+      line-height: 100px;
+      text-align: center;
+      margin: 100px;
+      display: inline-block;
+    } */
+    body {
+      width: 300px;
+      position: relative;
+    }
+
+    .aside {
+      width: 100px;
+      height: 150px;
+      float: left;
+      background: #f66;
+    }
+
+    .main {
+      height: 200px;
+      background: #fcc;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="blue"></div>
+  <div class="red-outer">
+    <div class="red-inner">red inner</div>
+  </div> -->
+  <!-- <div class="box">
+      <div class="float">I am a floated box!</div>
+      <p>I am content inside the container.</p>
+  </div> -->
+  <!-- <p>Haha</p>
+  <p>Hehe</p> -->
+  <div class="aside"></div>
+  <div class="main"></div>
+</body>
+</html>

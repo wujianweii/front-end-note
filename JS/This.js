@@ -86,6 +86,21 @@ a.__proto__ === Array.prototype;
 // 3. 将步骤1新创建的对象作为this的上下文 / 函数中的this被指向新实例对象
 // 4. 如果该函数没有返回对象，则返回this
 
+// new一个对象的过程(代码)
+function newFunc(father, ...rest) {
+  var result = {};
+  result.__proto__ = father.prototype;
+  var result2 = father.apply(result, rest);
+  if (
+    (typeof result2 === 'object' || typeof result2 === 'function') &&
+    result2 !== null
+  ) {
+    return result2;
+  }
+  return result;
+}
+
+
 function MyClass() {
 	this.a = 37;
 }
