@@ -36,15 +36,17 @@ diff算法
 
 双向数据绑定
 
-三次四次
+TCP协议中的三次握手和四次挥手
+// https://blog.csdn.net/whuslei/article/details/6667471
 
-mvvm / mvc
+
+mvvm / mvc (了解之后不曾思考总结_也就无法表达)
 
 内联元素 / 内联块状元素 / 块级元素
 // https://www.imooc.com/code/2048 - 2050
 
 
-https://juejin.im/post/5d23e750f265da1b855c7bbe#heading-35
+// https://juejin.im/post/5d23e750f265da1b855c7bbe#heading-35
 
 var b = 10;
 (function b() {
@@ -57,3 +59,8 @@ var b = 10;
   console.log(window.b); // 10，不是20
 })();
 
+
+防抖 / 节流
+// https://www.jianshu.com/p/761a12d5993a
+// 节流： 在一定时间内，只执行一次事件(判断是否达到规定事件来触发函数·初次直接执行)
+// 防抖：事件触发后延时一段时间执行，如果事件多次触发，清空之前的延时，以当前事件重新延时

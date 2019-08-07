@@ -100,7 +100,7 @@ Object.defineProperty(obj, prop, descriptor)
 // - 会直接在一个对象上定义一个新属性，或者修改一个对象的现有属性， 并返回这个对象
 // - https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
 
-Object.getOwnPropertyNames()
+Object.getOwnPropertyNames(obj)
 // - 返回一个由指定对象的所有自身属性的属性名（包括不可枚举属性但不包括Symbol值作为名称的属性）组成的数组。
 
 
@@ -113,7 +113,9 @@ writable // 是否可写(重新分配)
 
 
 
-// 实现继承的方式
+// 实现继承的方式 
+
+ES5
 
 function Person() {}
 function Student() {}
@@ -135,3 +137,6 @@ if (!Object.create) {
 console.log(Student.prototype.constructor === Person) // true
 
 Student.prototype.constructor = Student; // 保证构造器的一致性
+
+
+ES6
