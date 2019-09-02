@@ -37,18 +37,18 @@ class Dep {
 	constructor() {
 		this.subs = []
 	}
-	//增加订阅者
+	// 增加订阅者
 	addSub(sub) {
 		this.subs.push(sub);
 	}
-	//判断是否增加订阅者
+	// 判断是否增加订阅者
 	depend() {
 		if (Dep.target) {
 			console.log(Dep.target);
 			this.addSub(Dep.target)
 		}
 	}
-	//通知订阅者更新
+	// 通知订阅者更新
 	notify() {
 		this.subs.forEach((sub) => {
 			console.log('notify');

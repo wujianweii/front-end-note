@@ -1,0 +1,24 @@
+##navigateto - 跳转参数/web url
+
+
+uni-app-login - 登录模版
+
+1.m-input 输入框 > clear/password
+
+// 解决软件盘弹出问题
+2.initPosition() {
+    /**
+      * 使用 absolute 定位，并且设置 bottom 值进行定位。软键盘弹出时，底部会因为窗口变化而被顶上来。
+      * 反向使用 top 进行定位，可以避免此问题。
+      */
+    this.positionTop = uni.getSystemInfoSync().windowHeight - 100;
+},
+
+
+uni-app-picture 看图模版
+
+1.上拉加载 - onReachBottom(到达底部时请求接口即可)
+2.停留在原处 - 原生实现(若是vue也有router方法完美实现)
+3.ActionSheet - uni.showActionSheet
+
+decodeURIComponent() 函数可对 encodeURIComponent() 函数编码的 URI 进行解码。
