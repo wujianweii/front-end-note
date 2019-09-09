@@ -2,7 +2,7 @@
 
 回调函数 - callback
 
-Promise
+Promise("return Promise")
 
 Generator
 
